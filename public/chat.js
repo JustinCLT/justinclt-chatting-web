@@ -1,4 +1,4 @@
-var port = process.env.PORT || '0.0.0.0'
+var port = process.env.PORT || 3000
 
 const socket = io.connect(`http://localhost:${port}`)
 
