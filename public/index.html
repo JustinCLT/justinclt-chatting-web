@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chatting website</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js"></script>
+    </head>
+    <style>
+        body{
+            font-family: 'Nunito';
+        }
+        #chat-window{
+            height: 400px;
+            overflow: auto;
+            background: #f9f9f9;
+            border: black solid 1px ;
+        }
+        #output p{
+            padding: 14px 0px;
+            margin: 0 20px;
+            border-bottom: 1px solid #e9e9e9;
+            color: #555;
+        }
+        #feedback p{
+            color: #aaa;
+            padding: 14px 0px;
+            margin: 0 20px;
+        }
+        
+        #name{
+            padding: 20px 2px;
+            width: 100%;
+            margin-bottom: 5px;;
+            transition: 100ms;
+        }
+        #pesan{
+            padding: 20px 2px;
+            width: 100%;
+            margin-bottom: 20px;;
+            transition: 100ms;
+        }
+        #send{
+            padding: 20px 2px;
+            width: 20%;
+            background-color: #23B7FF;
+            transition: 100ms;
+        }
+        input[type=text]:focus{
+            border: 3px solid #555;
+
+        }
+        #send:hover{
+            background-color:  #166389;
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1>Chat app</h1>
+            <p>by JustinCLT</p>
+            <div id='chat'>
+                <div id="chat-window">
+                    <div id="output"></div>
+                    <div id="feedback"></div>
+                </div>
+                <h4>Name</h4>
+                <input id="name" type="text" placeholder="NAME"/>
+                <h4>Message</h4>
+                <input id="pesan" type="text" placeholder="Masukkan Pesan"/>
+                <button id='send'>Kirim</button>
+            </div>
+            <script src = './chat.js'></script><br>
+            <a href="https://youtu.be/vQjiN8Qgs3c" target="_blank">thanks for the tutorial</a>
+        </div>
+    </body>
+</html>
