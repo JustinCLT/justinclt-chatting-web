@@ -1,4 +1,7 @@
-const socket = io.connect('http://localhost:3000')
+var port = process.env.PORT || '0.0.0.0'
+
+const socket = io.connect(`http://localhost:${port}`)
+
 
 var pesan = document.getElementById('pesan');
 var nama = document.getElementById('name')
