@@ -46,7 +46,6 @@ socket.on('chat', data => {
     if (!data.pesan.trim().length) return alert('Masukkan pesannya!')
     feedback.innerHTML = ""
     output.innerHTML += `<p><strong>${data.name} (${data.waktu})</strong><br>${data.pesan}</p>`
-    pesan.value = ''
 })
 
 socket.on('connected', () => {
