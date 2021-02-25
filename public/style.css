@@ -30,7 +30,7 @@ body{
 .flexing-nitro-lol{display:flex}
 #pesan{
     padding: 20px 2px;
-    width: 100%%;
+    width: 100%;
     margin-bottom: 20px;;
     transition: 100ms;
     margin-left: 10px;
@@ -42,7 +42,6 @@ body{
     margin-right: 10px;
     background-color: #23B7FF;
     transition: 100ms;
-    float:right;
 }
 input[type=text]:focus{
     border: 3px solid #555;
