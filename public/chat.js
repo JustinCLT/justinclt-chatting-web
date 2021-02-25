@@ -15,8 +15,8 @@ return t
 window.setInterval(t, 1000)
 
 button.addEventListener('click', () => {
+    if(!pesan.value.length) return alert('Masukkan pesannya!')
     socket.emit('chat', {
-        if(!pesan.value.length) return alert('Masukkan pesannya!')
         pesan: pesan.value,
         name: localStorage.getItem('username'),
         waktu: t()
