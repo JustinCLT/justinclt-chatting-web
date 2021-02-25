@@ -1,0 +1,61 @@
+body{
+
+    margin: 0px;
+    font-family:'Nunito';
+}
+#chat-window{
+    margin: 10px;
+    border: 1px solid black;
+    height: 500px;
+    overflow: auto;
+    background: #f9f9f9;
+}
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#name{
+    padding: 20px 2px;
+    width: 90%;
+    margin-bottom: 5px;;
+    transition: 100ms;
+}
+#pesan{
+    padding: 20px 2px;
+    width: 85%;
+    margin-bottom: 20px;;
+    transition: 100ms;
+    margin-left: 10px;
+}
+#send{
+    height: 59px;
+    padding: 20px 2px;
+    width: 10%;
+    margin-right: 10px;
+    background-color: #23B7FF;
+    transition: 100ms;
+    float:right;
+}
+input[type=text]:focus{
+    border: 3px solid #555;
+
+}
+#send:hover{
+    background-color:  #166389;
+    color: white;
+}
+.header{
+    padding: 1px;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 14px;
+}
