@@ -17,7 +17,7 @@ window.setInterval(t, 1000)
 button.addEventListener('click', () => {
     if(!pesan.value.length) return alert('Masukkan pesannya!')
     socket.emit('chat', {
-        pesan: pesan.value,
+        pesan: pesan.value.replace(/</gi, '&lt;'),
         name: localStorage.getItem('username'),
         waktu: t()
     })
@@ -32,7 +32,7 @@ pesan.addEventListener('keyup', (e) => {
     if (e.key === "Enter") {
         if(!pesan.value.length) return alert('Masukkan pesannya!')
         socket.emit('chat', {
-            pesan: pesan.value,
+            pesan: pesan.value.replace(/</gi, '&lt;'),
             name: localStorage.getItem('username'),
             waktu: t()
         })
