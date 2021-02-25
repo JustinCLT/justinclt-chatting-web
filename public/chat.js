@@ -21,6 +21,7 @@ button.addEventListener('click', () => {
         name: localStorage.getItem('username'),
         waktu: t()
     })
+    pesan.value = ''
 })
 
 pesan.addEventListener('keypress', () => {
