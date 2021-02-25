@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
 })
 
 pesan.addEventListener('keypress', () => {
-    socket.emit('is-typing',nama.value)
+    socket.emit('is-typing',localStorage.getItem('username'))
 })
 
 pesan.addEventListener('keyup', (e) => {
