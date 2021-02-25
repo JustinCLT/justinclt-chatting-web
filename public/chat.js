@@ -1,4 +1,4 @@
-const socket = io.connect(`http://localhost:3000`)
+const socket = io.connect(window.location.hostname)
 
 var pesan = document.getElementById('pesan');
 var nama = document.getElementById('name')
