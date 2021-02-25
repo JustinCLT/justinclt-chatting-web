@@ -42,6 +42,7 @@ body{
     margin-right: 10px;
     background-color: #23B7FF;
     transition: 100ms;
+    border: none;
 }
 input[type=text]:focus{
     border: 3px solid #555;
