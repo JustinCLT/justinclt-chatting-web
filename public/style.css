@@ -1,5 +1,4 @@
 body{
-
     margin: 0px;
     font-family:'Nunito';
 }
@@ -28,9 +27,10 @@ body{
     margin-bottom: 5px;;
     transition: 100ms;
 }
+.flexing-nitro-lol{display:flex}
 #pesan{
     padding: 20px 2px;
-    width: 85%;
+    width: 100%%;
     margin-bottom: 20px;;
     transition: 100ms;
     margin-left: 10px;
@@ -38,7 +38,7 @@ body{
 #send{
     height: 59px;
     padding: 20px 2px;
-    width: 10%;
+    width: 120px;
     margin-right: 10px;
     background-color: #23B7FF;
     transition: 100ms;
