@@ -28,6 +28,7 @@ pesan.addEventListener('keypress', () => {
 })
 
 pesan.addEventListener('keyup', (e) => {
+    if(!pesan.value.length) return alert('Masukkan pesannya!')
     if (e.key === "Enter") {
         socket.emit('chat', {
             pesan: pesan.value,
