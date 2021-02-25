@@ -2,11 +2,10 @@ const express = require('express')
 const app = express()
 const socket = require('socket.io')
 
-var port = process.env.PORT || '3000'
-
+var port = process.env.PORT || 3000
 
 var server = app.listen(port, function () {
-    console.log('Listening on port '+port)
+    console.log(`Listening on port ${port}`)
 })
 
 app.use(express.static('public'))
@@ -29,4 +28,8 @@ io.on('connection', function (socket) {
         io.sockets.emit('is-typing', data)
     })
     
+})
+
+app.get('*', (req,res) => {
+    res.redirect('https://youtu.be/dQw4w9WgXcQ')
 })
