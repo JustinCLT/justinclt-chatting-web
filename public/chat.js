@@ -35,6 +35,7 @@ pesan.addEventListener('keyup', (e) => {
             name: localStorage.getItem('username'),
             waktu: t()
         })
+        pesan.value = ''
     }
 })
 
